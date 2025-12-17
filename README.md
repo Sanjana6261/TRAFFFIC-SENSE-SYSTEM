@@ -1,29 +1,38 @@
-# 🚦 Traffic Sense System (Smart Surveillance Project)
+# 🚦 Traffic Sense System
 
-An AI-powered **Smart Surveillance & Traffic Monitoring System** built using **Python, Computer Vision, and Deep Learning**. This project focuses on real-time video analysis to detect vehicles, people, and traffic patterns for enhanced road safety and intelligent monitoring.
+An **AI-powered Traffic Monitoring and Analysis System** built using **Python, Computer Vision, and Deep Learning**. This project analyzes traffic videos to detect vehicles, generate traffic reports, and visualize road congestion using heatmaps.
 
 ---
 
 ## 📌 Project Overview
 
-The **Traffic Sense System** is designed to analyze live camera feeds or recorded videos to:
+The **Traffic Sense System** is designed to support intelligent traffic management by processing recorded traffic videos. It detects and analyzes vehicles frame-by-frame and produces meaningful outputs such as traffic statistics and road heatmaps.
 
-* Monitor traffic conditions
-* Detect objects such as vehicles and humans
-* Capture unknown or suspicious activity
-* Assist in intelligent surveillance and traffic management
+This project is suitable for:
 
-This project demonstrates the practical use of **YOLO (You Only Look Once)** models and **OpenCV** for real-time detection and tracking.
+* Smart city traffic analysis
+* Academic mini / major projects
+* Computer vision and AI learning
 
 ---
 
 ## 🎯 Objectives
 
-* To build a smart surveillance system using AI
-* To perform real-time object and face detection
-* To capture snapshots of unknown faces or events
-* To enhance traffic monitoring using deep learning
-* To provide a scalable base for smart city applications
+* To analyze traffic flow using computer vision
+* To detect vehicles from traffic videos
+* To generate traffic analysis reports (CSV)
+* To visualize traffic density using heatmaps
+* To demonstrate practical use of AI in traffic monitoring
+
+---
+
+## ⚙️ Key Features
+
+* 🚗 Vehicle detection using deep learning (YOLO)
+* 📹 Traffic video processing
+* 📊 Automatic traffic report generation (`TRAFFIC_REPORT.csv`)
+* 🗺️ Road congestion visualization using heatmaps
+* 🧠 Notebook-based implementation for easy understanding
 
 ---
 
@@ -31,13 +40,10 @@ This project demonstrates the practical use of **YOLO (You Only Look Once)** mod
 
 * **Programming Language:** Python
 * **Computer Vision:** OpenCV
-* **Deep Learning Model:** YOLOv8
-* **Frameworks & Libraries:**
-
-  * ultralytics
-  * numpy
-  * cv2
-* **Frontend (Basic):** HTML (Flask template)
+* **Deep Learning Model:** YOLO
+* **Data Processing:** NumPy, Pandas
+* **Visualization:** Matplotlib / Seaborn
+* **Environment:** Jupyter Notebook
 * **Version Control:** Git & GitHub
 
 ---
@@ -48,113 +54,81 @@ This project demonstrates the practical use of **YOLO (You Only Look Once)** mod
 TRAFFFIC-SENSE-SYSTEM/
 │
 ├── TRAFFIC SENSE SYSTEM.ipynb   # Main Jupyter Notebook
-├── traffic_report.csv          # Generated traffic analysis report
-├── final_road_heatmap.png      # Final road congestion heatmap
-├── requirements.txt            # Project dependencies
+├── TRAFFIC_REPORT.csv          # Generated traffic analysis report
+├── FINAL_ROAD_HEATMAP.png      # Final road congestion heatmap
 ├── README.md                   # Project documentation
-│
-├── data/                       # Input videos / images (if any)
-├── output/                     # Generated outputs
-│   ├── heatmaps/
-│   └── reports/
-│
-├── models/                     # ML / CV models (YOLO, etc.)
-└── .gitignore                  # Ignored files
+├── .gitignore                  # Ignored files
 ```
-
-smart-surveillance-project-2/
-│
-├── app.py                 # Main application file
-├── camera.py              # Camera handling and detection logic
-├── requirements.txt       # Project dependencies
-├── .gitignore             # Ignored files
-│
-├── templates/
-│   └── index.html         # Web interface
-│
-├── known_faces/            # Known person images
-├── snapshots/              # Captured unknown images
-│
-├── yolov8n.pt              # YOLO object detection model
-├── yolov8n-face.pt         # YOLO face detection model
-
-````
 
 ---
 
-## ⚙️ Installation & Setup
+## ▶️ How to Run the Project
 
 ### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/Sanjana6261/TRAFFFIC-SENSE-SYSTEM.git
 cd TRAFFFIC-SENSE-SYSTEM
-````
-
-### 2️⃣ Create Virtual Environment (Optional but Recommended)
-
-```bash
-python -m venv venv
-venv\Scripts\activate
 ```
 
-### 3️⃣ Install Dependencies
+### 2️⃣ Install Required Libraries
 
 ```bash
-pip install -r requirements.txt
+pip install opencv-python numpy pandas matplotlib ultralytics
 ```
 
-### 4️⃣ Run the Application
+### 3️⃣ Run the Notebook
 
-```bash
-python app.py
+Open Jupyter Notebook and run:
+
 ```
+TRAFFIC SENSE SYSTEM.ipynb
+```
+
+Run all cells sequentially.
 
 ---
 
-## 🚀 Features
+## 📈 Outputs
 
-* ✅ Real-time video surveillance
-* ✅ Face detection using YOLO
-* ✅ Vehicle & object detection
-* ✅ Automatic snapshot capture
-* ✅ Modular and scalable code structure
-* ✅ Easy to extend for smart city use-cases
+* 📄 **Traffic Analysis Report:** `TRAFFIC_REPORT.csv`
+* 🗺️ **Road Heatmap:** `FINAL_ROAD_HEATMAP.png`
 
----
+🎥 **Demo Videos:**
 
-## 📸 Output
-
-* Live video feed with bounding boxes
-* Automatic saving of unknown faces
-* Real-time object detection results
+> Due to large file size, input and output traffic videos are shared via external links (e.g., Google Drive).
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Traffic density analysis
-* Vehicle counting & classification
+* Real-time CCTV integration
+* Vehicle classification (car, bike, bus, truck)
+* Traffic density prediction
+* Dashboard for live analytics
 * License plate recognition (ANPR)
-* Cloud-based data storage
-* Alert system using SMS/Email
-* Dashboard with analytics
+
+---
+
+## 🎓 Academic Use
+
+This project is ideal for:
+
+* B.Tech / BE AI, ML, or Computer Vision projects
+* Smart city and traffic management studies
+* Practical implementation of YOLO-based detection
 
 ---
 
 ## 👩‍💻 Author
 
 **Sanjana Kushwah**
-B.Tech (IT) Student
-AI | Machine Learning | Computer Vision Enthusiast
+B.Tech (IT) | AI & ML Enthusiast
 
-🔗 GitHub: [Sanjana6261](https://github.com/Sanjana6261)
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute this project for educational purposes.
+🔗 GitHub: [https://github.com/Sanjana6261](https://github.com/Sanjana6261)
 
 ---
 
-⭐ *If you like this project, don’t forget to give it a star on GitHub!* ⭐
+## ⭐ Support
+
+If you find this project useful, please ⭐ star the repository and share feedback.
